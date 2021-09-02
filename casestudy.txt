@@ -1,0 +1,45 @@
+Case Study: Flight Booking System 
+
+Stakeholders:
+                  1)Passengers
+                  2)Employees
+                  3)Government Authorities
+                  4)Airlines
+
+
+Work Flow:
+
+Step1:
+          Login
+                  -username,password
+Step2: 
+         Searching for flight
+                 - by entering starting place,destination and date
+Step3: 
+         Display available flights
+                  -based on the details given in step 1
+Step4: Selecting and booking the desired flight
+Step5: Passenger details
+                    -firstname,lastname,gender...
+Step6: Displays booking confirmation
+                    -genrates reference number 
+Step7: Check-in details
+                     -by using reference number
+Step8: Check-in confirmation
+                      -displays check-in id and seat number
+
+
+Database:
+
+1)Flight details
+           -airline name
+           -flight number
+           -flight name
+           -route map
+2)Passenger details
+            -name
+            -gender
+            -contact
+3)Booking details
+             - reference number
+              -seat number
