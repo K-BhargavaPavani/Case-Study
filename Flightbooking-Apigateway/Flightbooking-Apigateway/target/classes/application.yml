@@ -1,0 +1,35 @@
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+server:
+  port: 8989
+
+
+spring:
+  application:
+    name: Flightbooking-Apigateway 
+  cloud:
+    gateway:
+      routes:
+      - id: Flight-Admin-Microservice
+        uri: http://localhost:9193/
+        predicates: 
+        - Path=/**
+      - id: Flight-Booking-Microservice
+        uri: http://localhost:8087/
+        predicates: 
+        - Path=/**
+      - id: Flight-Search-Microservice
+        uri: http://localhost:9195/
+        predicates:
+        - Path=/search/**
+
+
+

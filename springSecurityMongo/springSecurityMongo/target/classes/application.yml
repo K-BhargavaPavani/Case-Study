@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Admin-Security-Service
+  data: 
+    mongodb:
+      uri: mongodb+srv://DataAdmin:DataAdmin@cluster0.1eau7.mongodb.net/AdminDatabase?retryWrites=true&w=majority
+server:
+  port: 8682
